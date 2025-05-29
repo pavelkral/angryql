@@ -1,4 +1,4 @@
-# AngryGL
+# AngryGL - clone
 
 OpenGL clone of the [Unity Angry Bots ECS sample project](https://github.com/UnityTechnologies/AngryBots_ECS)
 
