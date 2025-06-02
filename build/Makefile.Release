@@ -69,7 +69,10 @@ OBJECTS       = release\main.obj \
 		release\player_model.obj \
 		release\shader.obj
 
-DIST          = shaders/basic_texture_shader.frag \
+DIST          = ../.gitignore \
+		../LICENSE \
+		../README.md \
+		shaders/basic_texture_shader.frag \
 		shaders/basic_texture_shader.vert \
 		shaders/basicer_shader.frag \
 		shaders/basicer_shader.vert \

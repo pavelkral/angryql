@@ -45,6 +45,9 @@ HEADERS += \
     vertex.h
 
 DISTFILES += \
+    ../.gitignore \
+    ../LICENSE \
+    ../README.md \
     shaders/basic_texture_shader.frag \
     shaders/basic_texture_shader.vert \
     shaders/basicer_shader.frag \
