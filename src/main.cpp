@@ -225,7 +225,8 @@ const float floorVertices[] = {
     floorSize / 2,  0.0f, floorSize / 2,  numTileWraps, numTileWraps,
     -floorSize / 2, 0.0f, -floorSize / 2, 0.0f,         0.0f,
     floorSize / 2,  0.0f, floorSize / 2,  numTileWraps, numTileWraps,
-    floorSize / 2,  0.0f, -floorSize / 2, 0.0f,         numTileWraps};
+    floorSize / 2,  0.0f, -floorSize / 2, 0.0f,         numTileWraps
+};
 
 void drawWigglyBois(Model& wigglyBoi, Shader& shader, const std::vector<Enemy>& enemies) {
     shader.use();
@@ -385,7 +386,7 @@ int main(int argc, const char **argv) {
             }
         }
     }
-    GLFWwindow* const window  = glfwCreateWindow( viewportWidth, viewportHeight,"AngryBots OpenGL",  NULL, NULL);
+    GLFWwindow* const window  = glfwCreateWindow( viewportWidth, viewportHeight,"Angry GL",  NULL, NULL);
     logTimeSince("window created ", appStart);
     if (window == NULL) {
         std::cerr << "Failed to create GLFW window" << std::endl;
@@ -467,6 +468,7 @@ int main(int argc, const char **argv) {
     Shader wigglyShader = Shader::create("shaders/wiggly_shader.vert", "shaders/player_shader.frag");
     // char* data =  "Testing String";
     char *p = (char*)"assets/models/EelDog/EelDog.FBX";
+
     Model wigglyBoi(p, false);
     Shader playerShader = Shader::create("shaders/player_shader.vert", "shaders/player_shader.frag");
     playerShader.use();
@@ -689,8 +691,6 @@ int main(int argc, const char **argv) {
     glBlendFunc(GL_SRC_ALPHA, GL_ONE_MINUS_SRC_ALPHA);
 
     glActiveTexture(GL_TEXTURE0);
-//..........................................................................................................................................................
-
 
     std::cout << "Entering render loop." << std::endl;
     int fpsLogCount = 0;
@@ -698,6 +698,9 @@ int main(int argc, const char **argv) {
     const int framesPerLog = 100;
     int frameMeasurementCount = 0;
     float totalFrameTime = 0.0f;
+
+    //..........................................................................................................................................................
+    //..........................................................................................................................................................
 
     while (!glfwWindowShouldClose(window)) {
 
