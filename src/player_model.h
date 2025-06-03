@@ -91,4 +91,5 @@ inline std::ostream &operator<<(std::ostream &os, const aiMatrix4x4 &m) {
     return os;
 }
 
+
 #endif // ANG__SD_MODEL_H_
